@@ -1,9 +1,10 @@
 # Hi there, I'm Sadique Imam 👋
 
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/sadique-imam)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/sdq99)
   [![Email](https://img.shields.io/badge/Email-Contact-red?style=flat-square&logo=gmail)](mailto:im.sdq99@gmail.com)
   [![Phone](https://img.shields.io/badge/Phone-+91_87092_97070-green?style=flat-square&logo=whatsapp)](tel:+918709297070)
-  [![Location](https://img.shields.io/badge/Location-Mumbai,_IN-orange?style=flat-square&logo=google-maps)](https://maps.google.com/?q=Mumbai)
+  [![Stack Overflow](https://img.shields.io/stackexchange/stackoverflow/r/9310776?label=Stack%20Overflow&logo=stackoverflow&style=flat-square)](https://stackoverflow.com/users/9310776/md-sadique-imam)
+
 
 
 ## 🚀 About Me
