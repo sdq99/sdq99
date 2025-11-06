@@ -1,8 +1,5 @@
 # Hi there, I'm Sadique Imam 👋
 
-
-  <img src="https://avatars.githubusercontent.com/u/35928705?s=400&u=320a143967cd3a628a1bb4272ab2d13ce0b2ede8&v=4" alt="Sadique Imam" width="200" height="200" style="border-radius: 50%;">
-  
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/sadique-imam)
   [![Email](https://img.shields.io/badge/Email-Contact-red?style=flat-square&logo=gmail)](mailto:im.sdq99@gmail.com)
   [![Phone](https://img.shields.io/badge/Phone-+91_87092_97070-green?style=flat-square&logo=whatsapp)](tel:+918709297070)
@@ -76,8 +73,8 @@
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sdq99&show_icons=true&theme=radical&count_private=true" alt="GitHub Stats" height="180">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sdq99&layout=compact&theme=radical" alt="Top Languages" height="180">
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=sdq99&show_icons=true&theme=radical&count_private=true" alt="GitHub Stats" height="180">
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=sdq99&layout=compact&theme=radical" alt="Top Languages" height="180">
 </div>
 
 ## 🎯 Current Focus
