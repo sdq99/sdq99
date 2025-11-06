@@ -1,542 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sadique Imam - Senior Software Engineer</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --primary-color: #D97634;
-            --sidebar-bg: #D9763422;
-            --text-primary: #333;
-            --text-secondary: #868686;
-            --text-sidebar: #666;
-            --text-muted: #888;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            /*font-family: 'Roboto', sans-serif;*/
-            font-family: 'sans-serif', 'monospace';
-            background: #f5f5f5;
-            color: var(--text-primary);
-            line-height: 1.6;
-        }
-        
-        .resume-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-        
-        /* Header Styles */
-        .resume-header h1 {
-            color: var(--primary-color);
-            font-size: 2.5rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            margin-bottom: 0.25rem;
-        }
-        
-        .resume-header .subtitle {
-            color: var(--text-secondary);
-            font-size: 1.125rem;
-            font-weight: 300;
-            letter-spacing: 0.5px;
-        }
+# Hi there, I'm Sadique Imam 👋
 
-        .resume-header .summary {
-            font-style: italic;
-            font-size: 14.5px;
-            font-weight: 300;
-            margin: 7px 0;
-        }
-        
-        /* Section Headers */
-        .section-title {
-            color: var(--primary-color);
-            font-size: 1rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 22px;
-            margin-bottom: 1.25rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--primary-color);
-        }
-        
-        /* Main Content Column */
-        .main-content {
-            background: white;
-            padding: 25px;
-            padding-bottom: 0px;
-            margin-left: 10px;
-        }
-        
-        /* Experience Items */
-        .experience-item {
-            margin-bottom: 2rem;
-        }
-        
-        .company-name {
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.125rem;
-        }
-        
-        .company-location {
-            font-weight: 400;
-            color: var(--text-secondary);
-        }
-        
-        .company-description {
-            font-size: 0.875rem;
-            color: var(--text-muted);
-            font-style: italic;
-            margin-bottom: 0.5rem;
-        }
-        
-        .job-header {
-            margin-bottom: 0.75rem;
-        }
-        
-        .job-title {
-            font-size: 0.9375rem;
-            color: var(--text-primary);
-            font-weight: 500;
-        }
-        
-        .job-dates {
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-            white-space: nowrap;
-        }
-        
-        .responsibilities {
-            padding-left: 10px;
-            margin-bottom: 0;
-        }
-        
-        .responsibilities li {
-            list-style: none;
-            position: relative;
-            padding-left: 1.25rem;
-            margin-bottom: 0.625rem;
-            font-size: 0.875rem;
-            color: #444;
-            line-height: 1.5;
-        }
-        
-        .responsibilities li:before {
-            content: "●";
-            position: absolute;
-            left: 0;
-            color: var(--primary-color);
-            font-size: 0.625rem;
-            top: 0.25rem;
-        }
-        
-        /* Education */
-        .education-item {
-            margin-bottom: 0.5rem;
-        }
-        
-        .degree {
-            font-size: 0.9375rem;
-            font-weight: 500;
-            color: var(--text-primary);
-        }
-        
-        .university {
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-        }
-        
-        /* Sidebar */
-        .sidebar {
-            background: var(--sidebar-bg);
-            padding: 2.5rem 1.5rem;
-            min-height: 100%;
-        }
-        
-        .sidebar h3 {
-            color: var(--primary-color);
-            font-size: 0.875rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-            margin-top: 2rem;
-        }
-        
-        .sidebar h3:first-child {
-            margin-top: 0;
-        }
-        
-        /* Contact Items */
-        .contact-item {
-            font-size: 0.875rem;
-            color: #555;
-            margin-bottom: 0.45rem;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-        
-        .contact-item i {
-            position: absolute;
-            left: 0;
-            color: var(--primary-color);
-            font-size: 0.875rem;
-            top: 0.125rem;
-            width: 1rem;
-        }
-        
-        /* Skills */
-        .skill-category {
-            margin-bottom: 13px;
-        }
-        
-        .skill-category-title {
-            font-size: 0.8125rem;
-            color: #a25725;
-            font-style: italic;
-            margin-bottom: 0.2rem;
-        }
-        
-        .skill-item {
-            font-size: 0.875rem;
-            color: var(--text-sidebar);
-            margin-bottom: 0.375rem;
-            padding-left: 1.2rem;
-            position: relative;
-        }
-        
-        .skill-item:before {
-            content: "●";
-            position: absolute;
-            left: 0;
-            color: var(--text-sidebar);
-            font-size: 0.5rem;
-            top: 0.375rem;
-        }
-        
-        /* Education Sidebar */
-        /*.education-sidebar {
-            margin-top: 1rem;
-        }*/
-        
-        .education-sidebar .degree-name {
-            /*font-size: 0.875rem;
-            font-weight: 500;
-            color: var(--text-primary);
-            margin-bottom: 0.1875rem;*/
-            font-size: 16px;
-            color: var(--text-sidebar);
-            margin-bottom: 0.125rem;
-        }
-        
-        .education-sidebar .course-name {
-            font-size: 12px;
-            color: var(--text-sidebar);
-            margin-bottom: 0.125rem;
-        }
-        
-        .education-sidebar .location {
-            font-size: 0.8125rem;
-            color: var(--text-muted);
-            font-style: italic;
-        }
-        .education-sidebar .session {
-            float: right;
-            font-style: italic;
-        }
-        .skill-item .semi-bold {
-            font-weight: 500;
-        }
-        
-        /* Responsive adjustments */
-        /*@media (max-width: 768px) {
-            .resume-header h1 {
-                font-size: 2rem;
-            }
-            
-            .main-content,
-            .sidebar {
-                padding: 1.5rem;
-            }
-            
-            .section-title {
-                margin-top: 1.5rem;
-            }
-        }*/
-        
-        /* Print Styles */
-        /*@media print_ {
-            body {
-                background: white;
-                margin: 0;
-                padding: 0;
-            }
-            
-            .resume-container {
-                box-shadow: none;
-                max-width: 100%;
-                width: 100%;
-            }
-            
-            .experience-item {
-                page-break-inside: avoid;
-            }
-            
-            .main-content {
-                padding: 1.5rem !important;
-            }
-            
-            .sidebar {
-                padding: 1.5rem 1rem !important;
-                background: var(--sidebar-bg) !important;
-                -webkit-print-color-adjust: exact !important;
-                print-color-adjust: exact !important;
-                color-adjust: exact !important;
-            }
-            
-            /* Force Bootstrap columns to display properly in print */
-            .col-lg-8 {
-                width: 66.666667% !important;
-                max-width: 66.666667% !important;
-                flex: 0 0 66.666667% !important;
-            }
-            
-            .col-lg-4 {
-                width: 33.333333% !important;
-                max-width: 33.333333% !important;
-                flex: 0 0 33.333333% !important;
-            }
-            
-            .row {
-                display: flex !important;
-            }
-            
-            /* Ensure colors print */
-            * {
-                -webkit-print-color-adjust: exact !important;
-                print-color-adjust: exact !important;
-                color-adjust: exact !important;
-            }
-            
-            /* Keep font sizes readable */
-            .resume-header h1 {
-                font-size: 2.5rem !important;
-            }
-            
-            .section-title {
-                border-bottom: 2px solid var(--primary-color) !important;
-            }
-        }*/
-    </style>
-</head>
-<body>
-    <div class="container-fluid p-0">
-        <div class="resume-container">
-            <div class="row g-0">
-                <!-- Main Content Column -->
-                <div class="col-md-9">
-                    <div class="main-content">
-                        <!-- Header -->
-                        <header class="resume-header mb-4">
-                            <img src="https://avatars.githubusercontent.com/u/35928705?s=400&u=320a143967cd3a628a1bb4272ab2d13ce0b2ede8&v=4" class="rounded-circle float-end" height="135px" alt="...">
-                            <h1>Sadique Imam</h1>
-                            <div class="subtitle">Software Developer</div>
-                            <div class="summary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with over 7 years in building AI-powered enterprise solutions using Python, APIs and cloud technologies. Specialized in AI/ML integrations, automation pipelines and scalable web applications.</div>
-                        </header>
-                        
-                        <!-- Work Experience Section -->
-                        <section class="experience-section">
-                            <h2 class="section-title">WORK EXPERIENCE</h2>
-                            
-                            <!-- Southside Blooms -->
-                            <div class="experience-item">
-                                <div class="company-name">
-                                    Southside Blooms, <span class="company-location">Chicago, United State</span>
-                                </div>
-                                <div class="company-description">A Chicago-based nonprofit and farm-to-vase florist</div>
-                                <div class="job-header d-flex justify-content-between align-items-baseline">
-                                    <span class="job-title">Senior Software Engineer</span>
-                                    <span class="job-dates"><i class="fa-solid fa-calendar-days"></i> Mar 2024 – Aug 2025</span>
-                                </div>
-                                <ul class="responsibilities">
-                                    <li><b>Led the development of an AI-powered helpdesk ticketing system</b> by extending UVdesk and integrating Vertex AI + Dialogflow, automating over 80% of customer queries and reducing support costs.</li>
-                                    <li><b>Designed and deployed telephonic and conversational bots</b> using OpenAI, Vertex AI, and GCP Cloud Run pipelines, enabling faster query resolution and improving customer satisfaction.</li>
-                                    <li><b>Developed an end-to-end payroll and order automation pipeline</b> using Stripe, Bill.com, FedEx, and USPS APIs, streamlining payouts and shipment scheduling within the CRM.</li>
-                                </ul>
-                            </div>
-                            
-                            <!-- Powerweave -->
-                            <div class="experience-item">
-                                <div class="company-name">
-                                    Powerweave Pvt. Ltd., <span class="company-location">Mumbai</span>
-                                </div>
-                                <div class="company-description">A trusted digital transformation solutions provider</div>
-                                <div class="job-header d-flex justify-content-between align-items-baseline">
-                                    <span class="job-title">Software Developer</span>
-                                    <span class="job-dates"><i class="fa-solid fa-calendar-days"></i> Aug 2021 – Mar 2024</span>
-                                </div>
 
-                                <ul class="responsibilities">
-                                    <li><b>Developed a Notion-style editor</b> using EditorJS integrated with Django backend to streamline rich content workflows for internal teams.</li>
-                                    <li><b>Created dynamic e-commerce dashboards</b> with Chart.js and DatePicker.js to give product managers real-time visibility into sales trends and KPIs.</li>
-                                    <li><b>Implemented PDF and email automation workflows</b> using PDFTron and Mailchimp, reducing manual effort in user communication campaigns.</li>
-                                </ul>
-                            </div>
-                            
-                            <!-- Navigators Software -->
-                            <div class="experience-item">
-                                <div class="company-name">
-                                    Navigators Software, <span class="company-location">Kolkata</span>
-                                </div>
-                                <div class="job-header d-flex justify-content-between align-items-baseline">
-                                    <span class="job-title">Software Developer</span>
-                                    <span class="job-dates"><i class="fa-solid fa-calendar-days"></i> Nov 2020 – Jul 2021</span>
-                                </div>
-                                <ul class="responsibilities">
-                                    <li><b>Designed and implemented</b> new REST API endpoints in Django, optimizing performance and ensuring seamless third-party integrations.</li>
-                                    <li><b>Led migration of development,</b> user acceptance, and production environments to the cloud, enabling more reliable deployments.</li>
-                                </ul>
-                            </div>
-                            
-                            <!-- Matainja Technologies -->
-                            <div class="experience-item">
-                                <div class="company-name">
-                                    Matainja Technologies, <span class="company-location">Kolkata</span>
-                                </div>
-                                <div class="job-header d-flex justify-content-between align-items-baseline">
-                                    <span class="job-title">Web Developer</span>
-                                    <span class="job-dates"><i class="fa-solid fa-calendar-days"></i> Dec 2018 – Nov 2020</span>
-                                </div>
-                                <ul class="responsibilities">
-                                    <li><b>Maintain and support existing applications</b>, including bug fixing, performance tuning, and minor enhancements.</li>
-                                    <li><b>Develop and optimize back-end components</b> when required, ensuring reusable, efficient code and proper MySQL database management.</li>
-                                    <li><b>Collaborate with clients and team members</b> to understand requirements, resolve issues, and handle critical situations effectively.</li>
-                               </ul>
-                            </div>
-                        </section>
-                        
-                        <!-- Education Section -->
-                        <!-- <section class="education-section">
-                            <h2 class="section-title">HIGHEST QUALIFICATION</h2>
-                            <div class="education-item">
-                                <div class="degree">Bachelor's in Information Technology - 2015-18</div>
-                                <div class="university">Magadh University, Bodh Gaya, Bihar</div>
-                            </div>
-                        </section> -->
-                    </div>
-                </div>
-                
-                <!-- Sidebar Column -->
-                <div class="col-md-3">
-                    <aside class="sidebar">
-                        <!-- Contact Section -->
-                        <section class="contact-section pb-3">
-                            <h3>CONTACT</h3>
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                India
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-phone"></i>
-                                +91 87092 97070
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                im.sdq99@gmail.com
-                            </div>
-                        </section>
-                        
-                        <!-- Skills Section -->
-                        <section class="skills-section pb-3">
-                            <h3>SKILLS</h3>
-                            
-                            <div class="skill-category">
-                                <div class="skill-category-title">Programming & Scripting:</div>
-                                <div class="skill-item" style="font-weight: 600">Python</div>
-                                <div class="skill-item">PHP</div>
-                                <div class="skill-item">JS</div>
-                                <div class="skill-item">Bash/Shell</div>
-                            </div>
-                            
-                            <div class="skill-category">
-                                <div class="skill-category-title">Backend Frameworks & Libraries</div>
-                                <div class="skill-item" style="font-weight: 550">Django/Flask</div>
-                                <div class="skill-item">SqlAlchemy</div>
-                                <div class="skill-item">pandas</div>
-                                <div class="skill-item">Selenium</div>
-                            </div>
-                            
-                            <div class="skill-category">
-                                <div class="skill-category-title">Web Development & Deployment:</div>
-                                <div class="skill-item">Linux Administration</div>
-                                <div class="skill-item">Nginx/Apache</div>
-                                <div class="skill-item">MySQL/PostgreSQL</div>
-                                <div class="skill-item">Wordpress</div>
-                                <div class="skill-item">REST API</div>
-                                <div class="skill-item">Webhooks</div>
-                                <div class="skill-item">Javascript/JQuery</div>
-                                <div class="skill-item">Bootstrap</div>
-                            </div>
+  <img src="https://avatars.githubusercontent.com/u/35928705?s=400&u=320a143967cd3a628a1bb4272ab2d13ce0b2ede8&v=4" alt="Sadique Imam" width="200" height="200" style="border-radius: 50%;">
+  
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/sadique-imam)
+  [![Email](https://img.shields.io/badge/Email-Contact-red?style=flat-square&logo=gmail)](mailto:im.sdq99@gmail.com)
+  [![Phone](https://img.shields.io/badge/Phone-+91_87092_97070-green?style=flat-square&logo=whatsapp)](tel:+918709297070)
+  [![Location](https://img.shields.io/badge/Location-Mumbai,_IN-orange?style=flat-square&logo=google-maps)](https://maps.google.com/?q=Mumbai)
 
-                            <div class="skill-category">
-                                <div class="skill-category-title">Third-party Integrations</div>
-                                <div class="skill-item">OpenAI</div>
-                                <div class="skill-item">Stripe/Paypal</div>
-                                <div class="skill-item">FedEx/USPS</div>
-                                <div class="skill-item">Twillio</div>
-                            </div>
-                            
-                            <div class="skill-category">
-                                <div class="skill-category-title">Cloud, AI & Automation:</div>
-                                <div class="skill-item"><span class="semi-bold">Google Cloud</span class="semi-bold"> - VertexAI, Dialogflow, Cloud Run</div>
-                                <div class="skill-item"><span class="semi-bold">AI assistant bots</span class="semi-bold"> & email automation</div>
-                                <div class="skill-item"><span class="semi-bold">CI/CD</span class="semi-bold"> - Git, Docker, Jenkins</div>
-                            </div>
-                            
-                            
-                            
-                        </section>
-                        
-                        <!-- Education Section -->
-                        <section class="education-sidebar-section">
-                            <h3>EDUCATION</h3>
-                            <div class="education-sidebar">
-                                <div class="degree-name">Bachelor of Science</div>
-                                <div class="course-name">Information Technology<span class="session">2015-18</span></div>
-                                <div class="location">Magadh University, Bodh Gaya</div>
-                                <!-- <div class="session">2015-18</div> -->
-                            </div>
-                        </section>
-                    </aside>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Bootstrap JS (optional, for interactive components) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+
+## 🚀 About Me
+
+**Senior Software Engineer** with **7+ years** of expertise in building **AI-powered enterprise solutions**. I specialize in developing scalable applications that leverage cutting-edge AI/ML technologies to solve real-world business challenges.
+
+> *"Transforming complex business problems into elegant technical solutions through innovative AI integrations and automation."*
+
+## 💼 Professional Journey
+
+### 🌺 **Senior Software Engineer** @ Southside Blooms
+*Chicago, USA | Mar 2024 – Present*
+- 🤖 **Architected AI-powered helpdesk** automating 80% of customer queries using Vertex AI & Dialogflow
+- 📞 **Built conversational bots** with OpenAI & GCP Cloud Run for enhanced customer engagement
+- 💰 **Automated payroll & order processing** integrating Stripe, Bill.com, FedEx & USPS APIs
+
+### 💻 **Software Developer** @ Powerweave Pvt. Ltd.
+*Mumbai, India | Aug 2021 – Mar 2024*
+- 📝 **Developed Notion-style editor** with EditorJS & Django for streamlined content management
+- 📊 **Created dynamic dashboards** providing real-time sales analytics and KPIs
+- 📧 **Implemented automation workflows** reducing manual effort by 60%
+
+### Previous Roles
+- **Software Developer** @ Navigators Software (Nov 2020 – Jul 2021)
+- **Web Developer** @ Matainja Technologies (Dec 2018 – Nov 2020)
+
+## 🛠️ Tech Stack
+
+### **Core Languages**
+![Python](https://img.shields.io/badge/Python-Expert-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-Proficient-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-Experienced-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-Skilled-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+
+### **Backend Frameworks**
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-CC2927?style=flat-square&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+
+### **Cloud & AI/ML**
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+![Vertex AI](https://img.shields.io/badge/Vertex_AI-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
+![Dialogflow](https://img.shields.io/badge/Dialogflow-FF9800?style=flat-square&logo=google-cloud&logoColor=white)
+
+### **Databases & Infrastructure**
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+
+### **APIs & Integrations**
+![Stripe](https://img.shields.io/badge/Stripe-008CDD?style=flat-square&logo=stripe&logoColor=white)
+![PayPal](https://img.shields.io/badge/PayPal-00457C?style=flat-square&logo=paypal&logoColor=white)
+![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=flat-square&logo=twilio&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-009688?style=flat-square&logo=fastapi&logoColor=white)
+
+## 🏆 Key Achievements
+
+- 🎯 **80% reduction** in customer support workload through AI automation
+- 📈 **60% improvement** in operational efficiency via workflow automation
+- 🚀 **Successfully migrated** multiple enterprise applications to cloud infrastructure
+- 💡 **Pioneered AI integration** in traditional business workflows
+- 🔧 **Built scalable solutions** handling thousands of daily transactions
+
+## 📊 GitHub Stats
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=sdq99&show_icons=true&theme=radical&count_private=true" alt="GitHub Stats" height="180">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sdq99&layout=compact&theme=radical" alt="Top Languages" height="180">
+</div>
+
+## 🎯 Current Focus
+
+- 🤖 **Generative AI Applications**: Building next-gen AI solutions with LLMs
+- ☁️ **Cloud-Native Development**: Architecting scalable microservices on GCP
+- 🔄 **Process Automation**: Creating intelligent workflows that save time and money
+- 📈 **Data-Driven Solutions**: Leveraging analytics for business insights
+
+## 💡 What I Bring to Your Team
+
+- **7+ years** of proven software development expertise
+- **Strong problem-solving skills** with a track record of delivering complex solutions
+- **AI/ML integration expertise** to modernize your tech stack
+- **Full-stack capabilities** from backend APIs to cloud deployments
+- **Business-oriented mindset** focused on ROI and efficiency
+
+## 🎓 Education
+
+**Bachelor of Science in Information Technology**  
+*Magadh University, Bodh Gaya | 2015-2018*
+
+## 📬 Let's Connect!
+
+I'm passionate about leveraging technology to solve real-world problems. Whether you're looking to integrate AI into your business, automate workflows, or build scalable applications, I'd love to discuss how I can contribute to your success.
+
+
+  
+  📧 **Email:** im.sdq99@gmail.com  
+  📱 **Phone:** +91 87092 97070  
+  📍 **Location:** Mumbai, India  
+  
+  ---
+
+  ![Profile Views](https://komarev.com/ghpvc/?username=sdq99&color=blueviolet&style=flat-square)
