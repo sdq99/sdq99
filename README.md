@@ -1,4 +1,4 @@
-# Hi there, I'm Sadique Imam 👋
+# Hi there, I'm Sadique 👋
 
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/sdq99)
   [![Email](https://img.shields.io/badge/Email-Contact-red?style=flat-square&logo=gmail)](mailto:im.sdq99@gmail.com)
